@@ -48,10 +48,14 @@ for (var i = 0; i < studenti.length; i++) {
 
 // far inserire all'utente con 3 prompt un nuovo oggetto studente (in ordine nome, cognome e età)
 
+var nuovoNome = prompt("Inserisci il tuo nome"); 
+var nuovoCognome = prompt("Inserisci il tuo cognome"); 
+var nuovaEta = parseInt(prompt("Inserisci l'età")); 
+
 var nuovoStudente = {
-    nome: prompt("Inserisci il tuo nome"), 
-    cognome: prompt("Inserisci il tuo cognome"), 
-    eta: parseInt(prompt("Inserisci l'età")) 
+    nome: nuovoNome,  
+    cognome: nuovoCognome,  
+    eta: nuovaEta
 }
 
 console.log(nuovoStudente);
